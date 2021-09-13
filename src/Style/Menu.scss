@@ -1,14 +1,14 @@
 @import "../Variables.scss";
 
 .menu{
-    font-family: $fontStackNormal;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    margin: 1rem;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
+    font-family: $fontStackNormal;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
 
     &__logo{
         align-self: center;
@@ -20,6 +20,7 @@
 
     &__nav{
         display: flex;
+        justify-self: end;
 
         li{
             list-style: none;

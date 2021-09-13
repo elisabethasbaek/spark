@@ -1,11 +1,12 @@
-@import "../Variables.scss";
+@import "./Variables.scss";
 
 *{
     margin: 0;
-    box-sizing: border-box;
 }
 
 .App{
+    margin: 0;
+    box-sizing: border-box;
     font-family: $fontStackNormal;
     color: $primaryColor;
 }
