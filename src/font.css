@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Roag Bold";
+    src: url("./Fonts/Roag-Bold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Roag Extra Bold Italic";
+    src: url("./Fonts/Roag-ExtraBoldItalic.otf");
+    font-weight: bolder;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roag Light";
+    src: url("./Fonts/Roag-Light.otf");
+    font-weight: normal;
+}
