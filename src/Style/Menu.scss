@@ -1,0 +1,51 @@
+@import "../Variables.scss";
+
+.menu{
+    font-family: $fontStackNormal;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin: 1rem;
+
+    &__logo{
+        align-self: center;
+
+        .logo{
+
+        }
+    }
+
+    &__nav{
+        display: flex;
+
+        li{
+            list-style: none;
+            padding: 0 0.5rem;
+            font-size: 1rem;
+            min-width: 3rem;
+
+            &:last-of-type{
+                padding-left: 4rem;
+                font-family: $fontStackBold;
+                font-weight: bold;
+                width: 4rem;
+                
+                .navLink{
+                    color: $accentColor;
+
+                    &:hover{
+                        font-style: italic;
+                    }
+                }
+            }
+
+            .navLink{
+                text-decoration: none;
+                color: $primaryColor;
+
+                &:hover{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
