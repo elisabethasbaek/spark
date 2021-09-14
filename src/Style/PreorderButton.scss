@@ -1,0 +1,29 @@
+@import "../Variables.scss";
+
+.preorderButton{
+    cursor: pointer;
+    padding: 0.7rem 2rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    background-color: $accentColorTransparent;
+    text-decoration: none;
+    color: $accentColor;
+    text-transform: uppercase;
+    font-family: $fontStackBold;
+    font-weight: bolder;
+    transition: background-color 0.4s ease-in-out, color 0.2s ease-in-out;
+    
+    &:hover{
+        background-color: $accentColor;
+        color: $accentColorTransparent;
+    }
+    
+
+        &:visited{
+            color: $accentColor;
+        }
+
+        &:hover{
+            color: white;
+        }
+}
