@@ -2,11 +2,13 @@
 
 @keyframes inFromRight {
     0%{
-        margin-left: 100vw;
+        transform: translateX(50vw);
         opacity: 0%;
     }
+    70%{
+        transform: translateX(0vw);
+    }
     100%{
-        margin-left: 0%;
         opacity: 100%;
     }
 }
@@ -46,10 +48,16 @@
     }
     
     .mainImg{
+        position: relative;
+        z-index: -1;
         grid-area: 2/1/4/2;
         width: 100%;
         height: auto;
         object-fit: contain;
-        animation: inFromRight 1.5s linear;
+        margin-left: 0vw;
+        opacity: 1;
+        animation-name: inFromRight;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-out;
     }
 }

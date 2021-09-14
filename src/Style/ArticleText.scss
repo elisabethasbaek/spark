@@ -1,5 +1,55 @@
 @import "../Variables.scss";
 
+@keyframes onLoad {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 .articleText{
-    
+    display: grid;
+    align-self: center;
+    grid-gap: 5vh;
+    font-size: 1rem;
+
+    &__heading{
+        font-size: 4.3rem;
+        font-family: $fontStackBoldItalic;
+        font-weight: bolder;
+        font-style: italic;
+        text-transform: uppercase;
+        margin-bottom: 3vh;
+        line-height: 110%;
+        opacity: 1;
+        /* animation-name: onLoad;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-out; */
+    }
+
+    &__text{
+        max-width: 50%;
+        line-height: 180%;
+    }
+
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 10% 2fr;
+        grid-template-rows: auto auto;
+
+        .text{
+            grid-area: 1/1/2/3;
+        }
+
+        .preorderButton{
+            grid-area: 2/1/3/3;
+            align-self: end;
+        }
+
+        .arrow{
+            grid-area: 1/2/3/4;
+        }
+    }
 }

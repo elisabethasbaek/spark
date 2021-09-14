@@ -5,7 +5,7 @@ import PipeBurn from "../Assets/media_pipeburn.png";
 import Greasy from "../Assets/Greasy.png";
 
 export default function AsSeenIn(){
-    var imgArray = [BikeExif, ChopCult, PipeBurn, Greasy];
+    var imgArray = [BikeExif, PipeBurn, Greasy, ChopCult];
 
     return(
         <article className="asSeenIn">
