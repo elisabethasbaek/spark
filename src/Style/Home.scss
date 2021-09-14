@@ -1,5 +1,14 @@
 @import "../Variables.scss";
 
 .home{
-    width: 80vw;
+    margin-left: 5vw;
+    
+    &__article{
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .bigImage{
+            grid-area: 1/2/2/3;
+        }
+    }
 }
