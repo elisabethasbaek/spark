@@ -1,6 +1,7 @@
 import "../Style/Menu.scss";
 import {ReactComponent as Logo} from "../Assets/logo.svg";
 import { Link } from "@reach/router";
+import BurgerMenu from "./BurgerMenu";
 
 export default function Menu(){
     return(
@@ -15,6 +16,8 @@ export default function Menu(){
                 <li><Link className="navLink" to="/">About</Link></li>
                 <li><Link className="navLink" to="/">Preorder</Link></li>
             </ul>
+
+            <BurgerMenu />
         </header>
     )
 }

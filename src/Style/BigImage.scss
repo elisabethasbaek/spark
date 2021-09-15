@@ -13,6 +13,15 @@
     }
 }
 
+@keyframes draw{
+    from{
+        stroke-dashoffset: 0
+    }
+    to{
+        stroke-dashoffset: 500000000;
+    }
+}
+
 .bigImage{
     display: grid;
     grid-template-rows: 1.1fr 1fr 10fr;
@@ -25,6 +34,11 @@
         width: 6vw;
         height: auto;
         object-fit: contain;
+
+        path{
+            stroke-dasharray: 500000000;
+            animation: draw 10s infinite;
+        }
     }
 
     .heatLeftSVG{
@@ -57,7 +71,7 @@
         margin-left: 0vw;
         opacity: 1;
         animation-name: inFromRight;
-        animation-duration: 1.5s;
+        animation-duration: 1.2s;
         animation-timing-function: ease-out;
     }
 }

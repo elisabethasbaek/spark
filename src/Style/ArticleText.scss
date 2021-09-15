@@ -1,11 +1,20 @@
 @import "../Variables.scss";
 
-@keyframes onLoad {
-    0%{
+@keyframes onLoad{
+    from{
         opacity: 0;
     }
-    100%{
+    to{
         opacity: 1;
+    }
+}
+
+@keyframes fromBottom{
+    from{
+        transform: translateY(20vh);
+    }
+    to{
+        transform: translateY(0vh);
     }
 }
 
@@ -23,29 +32,37 @@
         text-transform: uppercase;
         margin-bottom: 3vh;
         line-height: 110%;
-        opacity: 1;
-        /* animation-name: onLoad;
-        animation-duration: 1.5s;
-        animation-timing-function: ease-out; */
+        animation-name: onLoad;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
     }
 
     &__text{
         max-width: 50%;
         line-height: 180%;
+        animation-name: fromBottom;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
     }
 
     &__wrapper{
         display: grid;
-        grid-template-columns: 1fr 10% 2fr;
+        grid-template-columns: 2fr 1fr 5fr;
         grid-template-rows: auto auto;
 
         .text{
             grid-area: 1/1/2/3;
+            animation-name: fromBottom;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in-out;
         }
 
         .preorderButton{
             grid-area: 2/1/3/3;
             align-self: end;
+            animation-name: fromBottom;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in-out;
         }
 
         .arrow{
